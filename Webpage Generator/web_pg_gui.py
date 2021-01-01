@@ -1,5 +1,6 @@
 from tkinter import *
 import tkinter as tk
+import webbrowser
 
 
 
@@ -29,6 +30,9 @@ class webWindow(Frame):
                 file = open("webpggen.html", "w")
                 file.write(self.webUpdate.get())
                 file.close()
+                webbrowser.open("webpggen.html")
+
+    
 
 
 
